@@ -23,7 +23,7 @@ class Song
   end
   def self.genre_count 
     empty_hash = {}
-    value = 1  
+  
   @@genres.each do |name|
   
     if empty_hash.has_key?(name)
@@ -36,6 +36,17 @@ class Song
      empty_hash
 
   
-end
+  end
+  def self.artist_count 
+    new_hash = {}
+    @@artists.each do |name| 
+      if new_hash.has_key?(name)
+        new_hash[name] += 1 
+      else 
+        new_hash[name] = 1 
+      end
+    end
+  end
+    
     
 end

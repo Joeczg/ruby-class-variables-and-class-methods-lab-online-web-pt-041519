@@ -32,9 +32,10 @@ class Song
        empty_hash[name] = 1  
   end
     
- end
+   end
      empty_hash
 
   
 end
+    
 end

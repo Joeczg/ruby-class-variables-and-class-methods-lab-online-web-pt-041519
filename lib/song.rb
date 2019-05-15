@@ -23,18 +23,18 @@ class Song
   end
   def self.genre_count 
     empty_hash = {}
-    @@value = 0 
+    @@value = 0  @@genres.each do |name| 
+      if @@genres.uniq.include?(name)
+        @@value += 1 
+      end
+     end
     @@genres.uniq.each do |name| 
       
         empty_hash[name] = @@value
     
   
     end
-    @@genres.each do |name| 
-      if @@genres.uniq.include?(name)
-        @@value += 1 
-      end
-     end
+   
      empty_hash
 
   

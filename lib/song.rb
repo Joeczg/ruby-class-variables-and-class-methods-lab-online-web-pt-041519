@@ -25,7 +25,7 @@ class Song
     empty_hash = {}
     value = 1 
   @@genres.each do |name|
-    empty_hash[name] += value 
+    empty_hash[name] += 1 
   
  end
      empty_hash

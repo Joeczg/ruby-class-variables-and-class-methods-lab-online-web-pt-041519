@@ -28,9 +28,10 @@ class Song
     empty_hash[name] = value
     if empty_hash.has_key?(name)
       value += 1 
-  
+     else 
+       empty_hash[name] = 1 
   end
-  
+    
  end
      empty_hash
 

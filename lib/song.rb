@@ -27,7 +27,7 @@ class Song
   @@genres.each do |name|
     empty_hash[name] = value
     if empty_hash.has_key?(name)
-      value += 1 
+      empty_hash[name] += 1 
      else 
        empty_hash[name] = 1 
   end

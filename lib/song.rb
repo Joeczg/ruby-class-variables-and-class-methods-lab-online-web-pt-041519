@@ -29,7 +29,7 @@ class Song
     if empty_hash.has_key?(name)
       empty_hash[name] += 1 
      else 
-       empty_hash[name] = 0  
+       empty_hash[name] = 1  
   end
     
  end
